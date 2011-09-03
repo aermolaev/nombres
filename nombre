@@ -1,0 +1,21 @@
+#!/usr/bin/ruby -w
+
+require 'lib/nombres'
+
+class Integer
+  include Nombres
+end
+
+def print_nombre(number)
+  puts number.to_i.to_nombre
+end
+
+if $*[0]
+  for number in $*
+    print_nombre(number)
+  end
+else
+  while number = gets
+    print_nombre(number)
+  end
+end

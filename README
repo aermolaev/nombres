@@ -1,0 +1,9 @@
+Nombres en français
+===================
+
+class Integer
+  include Nombres
+end
+
+1.to_nombre # un
+851.to_nombre # huit cent cinquante et un
